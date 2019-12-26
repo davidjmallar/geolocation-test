@@ -1,0 +1,12 @@
+version: "3.5"
+ 
+services:
+  geolocation-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: geolocation-test
+    image: geolocation-test
+    restart: unless-stopped
+    ports:
+      - 80:80
