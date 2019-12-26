@@ -7,7 +7,7 @@ import { LocationService } from './location.service';
     <!--The content below is only a placeholder and can be replaced.-->
     <div style="text-align:center">
       <h1>
-        Accuracy: {{accuracy}}m
+        Accuracy: {{accuracy | number : '.2-2'}}m
       </h1>
     </div>
   `,
